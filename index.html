@@ -4,23 +4,49 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Picture-upload-page</title>
+	<script type="module" src="script.js"></script>
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 	<header>
 		<h1>Minnessidan!</h1>
+		<div class="header_div">
+			<button class="header_button-picture-view">Bilder</button>
+			<button class="header_button-text-view">Texter</button>
+		</div>
 	</header>
 	<main>
-		<section  class="body_main_section-add-picture">
-			<label for="section_input-add-picture">Lägg upp en bild här</label>
-			<input id="section_input-add-picture" type="text">
-			<button class="section_button-add-picture" type="button">Lägg till bild</button>
+
+		<section  class="body_main_section-add-picture section">
+			<div class="section_div-add-picture">
+				<label for="section_input-add-picture">Lägg upp en bild här</label>
+				<input id="section_input-add-picture" type="file" accept="image/*">
+				<button class="section_button-add-picture" type="button">Lägg till bild</button>
+			</div>
+			<div class="section_div-show-picture">
+				<img src="https://cdn11.bigcommerce.com/s-kc25pb94dz/images/stencil/1280x1280/products/188/602/1-Bunch-Bananas__30199.1650549450.jpg?c=2" alt="bananas">
+				<img src="https://www.buffalomarket.com/hs-fs/hubfs/quick-release-energy-banana_480x480.jpg?width=383&name=quick-release-energy-banana_480x480.jpg" alt="bananas2">
+				<img src="https://www.theleader.com.au/images/transform/v1/crop/frm/jess.wallace/fd4814a4-7875-4aff-9a4a-3213b7d53c81.jpg/r248_546_3762_2641_w1200_h678_fmax.jpg" alt="bananas3">
+				<img src="https://img.freepik.com/free-photo/people-celebrating-wedding-beach_23-2149043926.jpg?w=1060&t=st=1694434916~exp=1694435516~hmac=0ff770211bc9acc5548b66cd69fb8312996c60db5ef55a725bf72f505944b9fc" alt="weddingpic of people">
+				<img src="https://www.farmersalmanac.com/wp-content/uploads/2020/11/Sliced-Banana-i488367811-1184x630.jpeg" alt="bananas4">
+				<img src="https://domf5oio6qrcr.cloudfront.net/medialibrary/6372/202ebeef-6657-44ec-8fff-28352e1f5999.jpg" alt="bananas5">
+			</div>
 		</section>
-		<section  class="body_main_section-add-picture">
-			<section class="body_section-add-text">
-			<label for="section_input-add-text"> Lägg upp en text här</label>
-			<input id="section_input-add-text" type="text">
-			<button class="section_button-add-text" type="button">Lägg till text</button>
+
+		<section  class="body_main_section-add-text section hidden">
+			<div class="section_div-add-text">
+				<label for="section_input-add-text"> Lägg upp en text här</label>
+				<textarea name="text-input" id="section_input-add-text" cols="30" rows="3" wrap="soft"></textarea>
+				<button class="section_button-add-text" type="button">Lägg till text</button>
+			</div>
+			<div class="section_div-show-text">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim quae quisquam, voluptatibus dignissimos repudiandae temporibus unde voluptas odio neque animi dicta illo nihil dolor, ipsum sequi dolore. Mollitia, suscipit tenetur!</p>
+				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo rerum esse ut, quas officia error suscipit delectus adipisci accusantium magnam iste saepe aperiam, laboriosam repudiandae laborum. Molestias quis dicta iste?</p>
+				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores ipsa iste dolore nisi doloremque perspiciatis, magni sed debitis neque temporibus, facilis exercitationem possimus incidunt laudantium. Dolorum ut vero non aliquid?</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis tenetur, vero omnis saepe consequatur voluptates. Alias repellat nostrum necessitatibus dolore quis impedit sed pariatur delectus odio? Tenetur possimus adipisci quo?</p>
+			</div>
 		</section>
+
 	</main>
 	<footer></footer>
 </body>

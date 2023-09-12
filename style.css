@@ -16,6 +16,10 @@ img{
 	margin: 1em;
 }
 
+button:hover{
+	cursor: pointer;
+}
+
 .header_div {
 	margin: 0.5em;
 }
